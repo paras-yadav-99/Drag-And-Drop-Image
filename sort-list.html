@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Test Drag And Drop
+    </title>
+
+    <!-- (A) LOAD CSS + JS -->
+    <link rel="stylesheet" href="sort-list.css"/>
+    <script src="sort-list.js"></script>
+  </head>
+  <body>
+    <!-- (B) THE LIST -->
+    <ul id="sortlist">
+      <li><img src="./1.jpg" alt=""></li>
+      <li><img src="./2.jpg" alt=""></li>
+      <li><img src="./3.jpg" alt=""></li>
+      <li><img src="./4.jpg" alt=""></li>
+      <li><img src="./5.jpg" alt=""></li>
+      <li><img src="./6.jpg" alt=""></li>
+    </ul>
+
+    <!-- (C) INIT ON PAGE LOAD -->
+    <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      slist(document.getElementById("sortlist"));
+    });
+    </script>
+  </body>
+</html>
